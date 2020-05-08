@@ -1,0 +1,10 @@
+.place__like-button {
+  width: 25px;
+  height: 20px;
+  border: none;
+  background-color: #FFFFFF;;
+  background-image: url(../../../images/like.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

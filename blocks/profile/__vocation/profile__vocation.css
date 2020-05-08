@@ -1,0 +1,16 @@
+.profile__vocation {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width:1023px) {
+  .profile__vocation {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0 auto 36px;
+   } 
+}

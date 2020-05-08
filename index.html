@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Mesto</title>
 </head>
+
 <body>
-  
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="Место">
+    </header>
+    <main class="content">
+      <section class="profile">
+        <img class="profile__avatar" src="./images/image.jpg" alt="Кусто">
+        <div class="profile__info">
+          <div class="profile__container">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button"><img class="profile__edit-button-icon" src="./images/pencil.png"
+                alt="карандаш"></button>
+          </div>
+          <p class="profile__vocation">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button"><img class="profile__add-button-icon" src="./images/plus.png"
+            src="+"></button>
+      </section>
+      <section class="places">
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1495542779398-9fec7dc7986c?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+            alt="Москва">
+          <div class="place__info">
+            <h3 class="place__title">Москва</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1544609442-26c059e02c7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+            alt="Киев">
+          <div class="place__info">
+            <h3 class="place__title">Киев</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1565284475981-fca4b3a3627a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+            alt="Варшава">
+          <div class="place__info">
+            <h3 class="place__title">Варшава</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1580852710598-96912fc48065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80"
+            alt="Прага">
+          <div class="place__info">
+            <h3 class="place__title">Прага</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1562883676-8c7feb83f09b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=361&q=80"
+            alt="Барселона">
+          <div class="place__info">
+            <h3 class="place__title">Барселона</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img class="place__image"
+            src="https://images.unsplash.com/photo-1556331530-2f511d9e4d46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+            alt="Амстердам">
+          <div class="place__info">
+            <h3 class="place__title">Амстердам</h3>
+            <button class="place__like-button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="">© 2020 Mesto Russia</p>
+    </footer>
+    <section class="popup">
+      <form class="popup__container">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <button class="popup__close-button"></button>
+        <input class="popup__input popur__input_edit_name" placeholder="Мое имя">
+        <input class="popup__input popur__input_edit_about" placeholder="Обо мне">
+        <button class="popup__save-button">Сохранить</button>
+      </form>
+    </section>
 </body>
+
 </html>
