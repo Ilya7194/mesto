@@ -11,8 +11,8 @@ function editClassPopup() {
 
 let profileName = document.querySelector('.profile__name');
 let profileVacation = document.querySelector('.profile__vocation');
-let nameInput = document.querySelector('.popur__input_edit_name');
-let jobInput = document.querySelector('.popur__input_edit_about');
+let nameInput = document.querySelector('.popup__input_edit_name');
+let jobInput = document.querySelector('.popup__input_edit_about');
 
 nameInput.value = profileName.textContent;
 jobInput.value = profileVacation.textContent;
