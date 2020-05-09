@@ -19,84 +19,73 @@
         <div class="profile__info">
           <div class="profile__container">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button"><img class="profile__edit-button-icon" src="./images/pencil.png"
-                alt="карандаш"></button>
+            <button class="profile__edit-button" type="button"><img class="profile__edit-button-icon"
+                src="./images/pencil.svg" alt="карандаш"></button>
           </div>
           <p class="profile__vocation">Исследователь океана</p>
         </div>
-        <button class="profile__add-button"><img class="profile__add-button-icon" src="./images/plus.png"
-            src="+"></button>
+        <button class="profile__add-button" type="button"><img class="profile__add-button-icon" src="./images/plus.svg"
+            alt="+"></button>
       </section>
       <section class="places">
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1495542779398-9fec7dc7986c?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-            alt="Москва">
+          <img class="place__image" src="./images/Moscow.jpg" alt="Москва">
           <div class="place__info">
             <h3 class="place__title">Москва</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1544609442-26c059e02c7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
-            alt="Киев">
+          <img class="place__image" src="./images/Kyiv.jpg" alt="Киев">
           <div class="place__info">
             <h3 class="place__title">Киев</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1565284475981-fca4b3a3627a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
-            alt="Варшава">
+          <img class="place__image" src="./images/Warsaw.jpg" alt="Варшава">
           <div class="place__info">
             <h3 class="place__title">Варшава</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1580852710598-96912fc48065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80"
-            alt="Прага">
+          <img class="place__image" src="./images/Prague.jpg" alt="Прага">
           <div class="place__info">
             <h3 class="place__title">Прага</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1562883676-8c7feb83f09b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=361&q=80"
-            alt="Барселона">
+          <img class="place__image" src="./images/Barcelona.jpg" alt="Барселона">
           <div class="place__info">
             <h3 class="place__title">Барселона</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
         <div class="place">
-          <img class="place__image"
-            src="https://images.unsplash.com/photo-1556331530-2f511d9e4d46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
-            alt="Амстердам">
+          <img class="place__image" src="./images/Amsterdam.jpg" alt="Амстердам">
           <div class="place__info">
             <h3 class="place__title">Амстердам</h3>
-            <button class="place__like-button"></button>
+            <button class="place__like-button" type="button"></button>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="">© 2020 Mesto Russia</p>
+      <p class="footer__text">&copy; 2020 Mesto Russia</p>
     </footer>
     <section class="popup">
-      <form class="popup__container">
+      <form class="popup__container" name="profile">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <button class="popup__close-button"></button>
-        <input class="popup__input popup__input_edit_name" placeholder="Мое имя">
-        <input class="popup__input popup__input_edit_about" placeholder="Обо мне">
+        <button class="popup__close-button" type="button"></button>
+        <input class="popup__input popup__input_edit_name" required placeholder="Мое имя" type="text" name="name">
+        <input class="popup__input popup__input_edit_about" required placeholder="Обо мне" type="text" name="about">
         <button class="popup__save-button" type="submit">Сохранить</button>
       </form>
     </section>
-    <script src='./script.js'></script>
+  </div>
+  <script src='./scripts/script.js'></script>
 </body>
 
 </html>
