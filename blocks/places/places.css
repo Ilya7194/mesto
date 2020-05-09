@@ -1,4 +1,5 @@
 .places {
+margin: 0 auto;
 width: 100%;
 display: grid;
 grid-template-columns: repeat(auto-fill, 282px);
@@ -6,6 +7,7 @@ grid-column-gap: 18px;
 grid-row-gap: 21px;
 padding-top: 51px;
 justify-content: center;
+max-width: 882px;
 }
 
 

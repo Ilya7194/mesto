@@ -11,8 +11,10 @@ let formElement = document.querySelector('.popup__container');
 
 function ShowCloseForm() {
   popup.classList.toggle('popup_opened');
-  nameInput.value = profileName.textContent;
-  jobInput.value = profileVacation.textContent;
+  if (popup.classList.contains('popup_opened') {
+    nameInput.value = profileName.textContent;
+    jobInput.value = profileVacation.textContent;
+  }
 }
 
 function formSubmitHandler(evt) {
