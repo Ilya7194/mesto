@@ -27,64 +27,48 @@
         <button class="profile__add-button" type="button"><img class="profile__add-button-icon" src="./images/plus.svg"
             alt="+"></button>
       </section>
-      <section class="places">
-        <div class="place">
-          <img class="place__image" src="./images/Moscow.jpg" alt="Москва">
-          <div class="place__info">
-            <h3 class="place__title">Москва</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-        <div class="place">
-          <img class="place__image" src="./images/Kyiv.jpg" alt="Киев">
-          <div class="place__info">
-            <h3 class="place__title">Киев</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-        <div class="place">
-          <img class="place__image" src="./images/Warsaw.jpg" alt="Варшава">
-          <div class="place__info">
-            <h3 class="place__title">Варшава</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-        <div class="place">
-          <img class="place__image" src="./images/Prague.jpg" alt="Прага">
-          <div class="place__info">
-            <h3 class="place__title">Прага</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-        <div class="place">
-          <img class="place__image" src="./images/Barcelona.jpg" alt="Барселона">
-          <div class="place__info">
-            <h3 class="place__title">Барселона</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-        <div class="place">
-          <img class="place__image" src="./images/Amsterdam.jpg" alt="Амстердам">
-          <div class="place__info">
-            <h3 class="place__title">Амстердам</h3>
-            <button class="place__like-button" type="button"></button>
-          </div>
-        </div>
-      </section>
+      <section class="places" aria-label="Места"></section>
     </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2020 Mesto Russia</p>
     </footer>
-    <section class="popup">
-      <form class="popup__container" name="profile">
+    <section class="popup popup_profile">
+      <form class="popup__container popup__container_place_profile" name="profile">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <button class="popup__close-button" type="button"></button>
+        <button class="popup__close-button popup__close-button_place_profile" type="button"></button>
         <input class="popup__input popup__input_edit_name" required placeholder="Мое имя" type="text" name="name">
         <input class="popup__input popup__input_edit_about" required placeholder="Обо мне" type="text" name="about">
-        <button class="popup__save-button" type="submit">Сохранить</button>
+        <button class="popup__submit-button popup__submit-button_save" type="submit">Сохранить</button>
       </form>
     </section>
+    <section class="popup popup_card">
+      <form class="popup__container popup__container_place_card" name="add-cards">
+        <h3 class="popup__title">Новое место</h3>
+        <button class="popup__close-button popup__close-button_place_card" type="button"></button>
+        <input class="popup__input popup__input_add_place" required placeholder="Название" type="text" name="place">
+        <input class="popup__input popup__input_add_image" required placeholder="Ссылка на картинку" type="text"
+          name="link">
+        <button class="popup__submit-button popup__submit-button_create" type="submit">Создать</button>
+      </form>
+    </section>
+    <section class="popup-image">
+      <div class="popup-image__container">
+        <img class="popup-image__photo" src="#" alt="">
+        <button class="popup-image__close-button" type="button"></button>
+        <p class="popup-image__caption"></p>
+      </div>
+    </section>
   </div>
+  <template id="card-template">
+    <div class="place">
+      <img class="place__image" src="" alt="">
+      <div class="place__info">
+        <h3 class="place__title"></h3>
+        <button class="place__like-button" type="button"></button>
+      </div>
+      <buton class="place__delete-button" type="button"></buton>
+    </div>
+  </template>
   <script src='./scripts/script.js'></script>
 </body>
 

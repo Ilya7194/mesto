@@ -2,6 +2,7 @@
 @import url(./__info/place__info.css);
 @import url(./__title/place__titile.css);
 @import url(./__like-button/place__like-button.css);
+@import url(./__delete-button/place__delete-button.css);
 
 .place {
 width: 282px;
@@ -9,4 +10,9 @@ border-radius: 10px;
 background-color: #FFFFFF;
 margin: auto;
 padding-bottom: 27px;
+position: relative;
 }
+
+.place:hover {
+  cursor: pointer;
+  

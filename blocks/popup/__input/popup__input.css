@@ -15,3 +15,13 @@
 .popup__input:last-of-type {
   margin-bottom: 0;
 }
+
+@media screen and (max-width:504px) {
+  .popup__input  {
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      font-size: 12px;
+      line-height: 15px;
+      height: 22px;
+   } 
+}

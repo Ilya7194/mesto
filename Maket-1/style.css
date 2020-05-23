@@ -1,0 +1,302 @@
+.page {
+  font-family: 'Titillium Web';
+  max-width: 1600px;
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color:#87509c;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__top-content {
+  display: flex;
+  width: 1033px;
+  margin: 57px 195px 145px 212px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 117px;
+  height: 37px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 416px;
+}
+
+.header__link-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 32px;
+}
+
+.header__link {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 13px;
+  color: #f7f3ea;
+}
+
+.header__link-space:hover {
+  background-color: #643a79;
+}
+ 
+.header__title {
+  width: 904px;
+  margin: 0 auto 54px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #f7f3ea; 
+}
+
+.header__button {
+  width: 293px;
+  height: 70px;
+  background-color: #eb7d4b;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto 145px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  opacity: 1;
+}
+
+.header__button:active {
+  transform: translateY(4px);
+  opacity: 1;
+}
+
+
+/* Секция Services */
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #17c2a4;
+}
+
+.section-title {
+  display: flex;
+  margin: 120px auto 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 4px;
+}
+
+.section-title_place_services{
+  color: #ffffff;
+}
+
+.section-line {
+  margin: 0 auto;
+  width: 87px;
+  height: 4px;
+}
+
+.section-line_place_services {
+  background-color:#14a58b;
+}
+
+.section-subtitle {
+  margin: 20px auto 80px; 
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+}
+
+.section-subtitle_place_services{
+  width: 600px;
+  color: #f7f3ea;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto 125px;
+
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.cards__image {
+
+}
+
+.cards__image_picture_flag {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 60px;
+}
+
+.cards__image_picture_pencil {
+  width: 90px;
+  height: 120px;
+  margin: 0 auto 60px;
+  }
+
+.cards__image_picture_gear {
+  width: 155px;
+  height: 120px;
+  margin: 0 auto 60px;
+}
+
+.cards__image_picture_rocket {
+  width: 95px;
+  height: 120px;
+  margin: 0 auto 60px;
+}
+
+.cards__title {
+  text-align: center;
+  margin: 0 auto ;
+   font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+}
+
+.cards__title_place_services{
+  color: #ffffff;
+}
+
+.cards__description {
+  text-align: center;
+  margin: 25px auto 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.cards__description_place_services{
+  color: #f7f3ea;
+}
+
+/* Секция Team */
+
+.team {
+  background-color: #e7f1f8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title_place_team{
+  color: #3c4761;
+}
+
+.section-subtitle_place_team {
+  color:#47526b;
+}
+
+.section-line_place_team {
+  background-color:#c7d9e5;
+}
+
+.cards-title_place_team{
+  color: #3c4761;
+}
+
+.cards__round{
+  width: 200px;
+  height: 200px;
+  background-color: #878787;
+  border-radius: 50%;
+  margin: 0 auto 40px;
+}
+
+.cards-description_place_team {
+  color: #3c4761;
+}
+
+.cards__author {
+  margin: 15px auto 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #30bae7;
+  letter-spacing: 0.32px; 
+}
+
+.cards__social-links {
+  display: flex;
+  margin: 30px auto 0;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.cards__social-link {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+
+
+.cards__social-link:hover {
+  opacity: .5;
+  transition: linear;
+}
+
+.cards__social-icon {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Секция Skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cards__image_picture_percent {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.section-line_place_skills {
+  background-color: #dfe8ed;
+}
+
+.section-subtitle_place_skills {
+  width: 570px;
+}
