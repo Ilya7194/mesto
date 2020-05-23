@@ -55,15 +55,17 @@ let profileVacation = document.querySelector('.profile__vocation');
 let nameInput = document.querySelector('.popup__input_edit_name');
 let jobInput = document.querySelector('.popup__input_edit_about');
 let formEditProfile = document.querySelector('.popup__container_place_profile');
+
+// Открытие/закрытие попапа редактирования профиля____________________________________________________
 function toggleProfileForm() {
-  popupProfle.classList.toggle('popup_opened');
+  toggleClass(popupProfle);;
   if (popupProfle.classList.contains('popup_opened')) {
     nameInput.value = profileName.textContent;
     jobInput.value = profileVacation.textContent;
   }
 }
 
-function editFormSubmitHandler(evt) {
+function editFormSubmitHandler(evt) { // обработчик попапа редактирования профиля
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileVacation.textContent = jobInput.value;
@@ -81,10 +83,6 @@ const popupCard = document.querySelector('.popup_card')
 const createButton = document.querySelector('.popup__submit-button_create');
 let formAddCard = document.querySelector('.popup__container_place_card');
 
-function toggleCardForm() { // функция открытия/закрытия попапа добавления карточки
-  popupCard.classList.toggle('popup_opened');
-}
-
 function addCard(link, name) { // функция создания карточки
   const cardTemplate = document.querySelector('#card-template').content;
   cardElement = cardTemplate.cloneNode(true);
@@ -98,7 +96,7 @@ function addCard(link, name) { // функция создания карточк
     evt.target.classList.toggle('place__like-button_active')
   });
   cardElement.querySelector('.place__image').addEventListener('click', function (evt) { //откытие увеличенной карточки
-    popupPhoto.classList.toggle('popup-image_opened');
+    popupPhoto.classList.add('popup-image_opened');
     popupPhotoImage.src = link;
     popupPhotoImage.alt = name;
     popupPhotoCaption.textContent = name;
@@ -106,8 +104,16 @@ function addCard(link, name) { // функция создания карточк
   document.querySelector('.places').prepend(cardElement);
 }
 
+// Открытие/закрытие попапа добавления карочки_______________________________________________________________________
+function toggleCardForm() { 
+  toggleClass(popupCard);
+}
 
-function addFormSubmitHandler(evt) {
+openCardFormButton.addEventListener('click', toggleCardForm);
+closeCardFormButton.addEventListener('click', toggleCardForm);
+formAddCard.addEventListener('submit', addFormSubmitHandler);
+
+function addFormSubmitHandler(evt) { // обработчик попапа добавления карточки
   let imageInput = document.querySelector('.popup__input_add_image');
   let placeInput = document.querySelector('.popup__input_add_place');
   name = placeInput.value;
@@ -119,13 +125,7 @@ function addFormSubmitHandler(evt) {
   placeInput.value = '';
   imageInput.value = '';
 }
-
-openCardFormButton.addEventListener('click', toggleCardForm);
-closeCardFormButton.addEventListener('click', toggleCardForm);
-formAddCard.addEventListener('submit', addFormSubmitHandler);
-
-
-// Закрытие попапа увеличения карточки. (открытие попапа реализовано в функции создания карточки)
+// Закрытие попапа увеличения карточки. (открытие попапа реализовано в функции создания карточки)_____________________
 const closePhotoPopupButton = document.querySelector('.popup-image__close-button');
 const popupPhoto = document.querySelector('.popup-image');
 const popupPhotoImage = document.querySelector('.popup-image__photo');
@@ -136,3 +136,6 @@ function closePhotoPopup() {
 }
 closePhotoPopupButton.addEventListener('click', closePhotoPopup);
 
+function toggleClass(elem) { // функция открытия закрытия попапов добавления карточки и редактирования профиля
+  elem.classList.toggle('popup_opened');
+}
