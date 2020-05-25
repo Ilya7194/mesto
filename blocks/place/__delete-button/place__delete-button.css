@@ -10,6 +10,7 @@
   position: absolute;
   right: 15px;
   top: 18px;
+  -webkit-appearance: none;
 }
 
 .place__delete-button:hover {
