@@ -33,21 +33,28 @@
       <p class="footer__text">&copy; 2020 Mesto Russia</p>
     </footer>
     <section class="popup popup_profile">
-      <form class="popup__container popup__container_place_profile" name="profile">
+      <form class="popup__container popup__container_place_profile" name="profile" novalidate>
         <h3 class="popup__title">Редактировать профиль</h3>
         <button class="popup__close-button popup__close-button_place_profile" type="button"></button>
-        <input class="popup__input popup__input_edit_name" required placeholder="Мое имя" type="text" name="name">
-        <input class="popup__input popup__input_edit_about" required placeholder="Обо мне" type="text" name="about">
-        <button class="popup__submit-button popup__submit-button_save" type="submit">Сохранить</button>
+        <input class="popup__input popup__input_edit_name" required placeholder="Мое имя" type="text" name="name"
+          minlength="2" maxlength="40" pattern="[A-Za-zА-ЯЁа-яё -]{1,}" id="name">
+        <span class="popup__error" id="name-error"></span>
+        <input class="popup__input popup__input_edit_about" required placeholder="Обо мне" type="text" name="about"
+          minlength="2" maxlength="200" id="about">
+        <span class="popup__error" id="about-error"></span>
+        <button class="popup__submit-button  popup__submit-button_save" type="submit">Сохранить</button>
       </form>
     </section>
     <section class="popup popup_card">
       <form class="popup__container popup__container_place_card" name="add-cards">
         <h3 class="popup__title">Новое место</h3>
         <button class="popup__close-button popup__close-button_place_card" type="button"></button>
-        <input class="popup__input popup__input_add_place" required placeholder="Название" type="text" name="place">
-        <input class="popup__input popup__input_add_image" required placeholder="Ссылка на картинку" type="text"
-          name="link">
+        <input class="popup__input popup__input_add_place" required placeholder="Название" type="text" name="place"
+          minlength="2" maxlength="30" id="nameplace">
+        <span class="popup__error" id="nameplace-error"></span>
+        <input class="popup__input popup__input_add_image" required placeholder="Ссылка на картинку" type="url"
+          name="link" id="place">
+        <span class="popup__error" id="place-error"></span>
         <button class="popup__submit-button popup__submit-button_create" type="submit">Создать</button>
       </form>
     </section>
@@ -69,6 +76,7 @@
       <buton class="place__delete-button" type="button"></buton>
     </div>
   </template>
+  <script src='./scripts/validates.js'></script>
   <script src='./scripts/script.js'></script>
 </body>
 
